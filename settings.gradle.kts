@@ -1,0 +1,2 @@
+rootProject.name = "mariogpt-client"
+
