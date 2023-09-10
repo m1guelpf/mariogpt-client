@@ -36,18 +36,12 @@ public class PlayLevel
     }
     
     public static void main(final String[] array) throws Exception {
+        String prompt = DEFAULT_PROMPT;
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Api URL:");
-        String apiUrl = scanner.nextLine();
+        String apiUrl = "https://api.replicate.com/v1/predictions";
 
         System.out.println("Api key:");
         String apiKey = scanner.nextLine();
-
-        System.out.println("Prompt (" + DEFAULT_PROMPT + "):");
-        String prompt = scanner.nextLine();
-        if (prompt.trim().length() == 0)
-            prompt = DEFAULT_PROMPT;
 
         System.out.println("Generating with prompt: " + DEFAULT_PROMPT);
         System.out.println("Waiting for base level");
